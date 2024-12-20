@@ -19,10 +19,11 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-    implementation(project("api"))
     implementation(project("domain"))
-    implementation(project("database"))
+    implementation(project("in"))
+    implementation(project("out"))
     implementation(project("common"))
+    testImplementation("com.tngtech.archunit:archunit-junit5:1.3.0")
 }
 
 kotlin {
